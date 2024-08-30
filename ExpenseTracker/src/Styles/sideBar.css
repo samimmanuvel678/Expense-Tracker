@@ -5,12 +5,10 @@
     width: 55px;
     height: 100%;
     background-color: #55E6C1;
-    padding-top: 15px;
     position: absolute;
     top: 0;
     left: 0;
     text-align: center;
-    transition: all 1s ease-in;
     
 }
 .active{
@@ -20,17 +18,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 15px;
 }
 
 .menuSection{
     width: 100%;
     padding: 10px 30px 10px 20px;
-    transition: background-color 1s;
     display: flex;
     align-items: center;
     gap: 20px;
     font-size: 16px;
+    transition: background-color 1s;
+    text-decoration: none;
 }
 .menuSection:hover{
     color: #F8EFBA;
@@ -38,11 +36,18 @@
 }
 .icon{
     font-size: 25px;
-}
+}  
+.dashboard{
+    padding: 15px 5px 15px 20px;
+    color: #F8EFBA;
+    background-color: #2C3A47;
+} 
 .closeIcon{
     float: right;
     padding-left: 10px;
     display: flex;
+    font-size: 35px;
+    margin-left: 20px;
 }
 .menuName{
     display: inline;

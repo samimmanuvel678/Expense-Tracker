@@ -17,19 +17,19 @@ function SideBar() {
                 <p className='icon'>{<TiThMenuOutline className='icon' />}</p>
             </div> : 
             <div className='menuSection dashboard' >
-                <h3 className='menuName'>Dashboard</h3>
+                <h2 className='menuName'>Dashboard</h2>
                 <p className='icon'>{<RiCloseLargeLine className='icon closeIcon' onClick={handleClick}/>}</p>
             </div>}
 
 
             {sideBarData.map((menu, index) => (
-                isOpen === false ? <div key={menu.id} className='menuSection' onClick={() => handleClick(menu.id)}>
+                isOpen === false ? <div key={menu.id} className='menuSection'>
                     <p className='icon'>{menu.icon}</p>
                 </div> :
-                    <div key={menu.id} className='menuSection' onClick={() => handleClick(menu.id)}>
+                    <Link to={menu.path} key={menu.id} className='menuSection'>
                         <p className='icon'>{menu.icon}</p>
-                        <h3 className='menuName'>{menu.name}</h3>
-                    </div>
+                        <span className='menuName'>{menu.name}</span>
+                    </Link>
             ))}
         </div>
     )
