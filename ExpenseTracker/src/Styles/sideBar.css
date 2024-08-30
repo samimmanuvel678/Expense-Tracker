@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
+
+.sideBar{
+    width: 55px;
+    height: 100%;
+    background-color: #55E6C1;
+    padding-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transition: all 1s ease-in;
+    
+}
+.active{
+    width: max-content;
+    height: 100%;
+    background-color: #55E6C1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 15px;
+}
+
+.menuSection{
+    width: 100%;
+    padding: 10px 30px 10px 20px;
+    transition: background-color 1s;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+.menuSection:hover{
+    color: #F8EFBA;
+    background-color: #2C3A47;
+}
+.icon{
+    font-size: 25px;
+}
+.closeIcon{
+    float: right;
+    padding-left: 10px;
+    display: flex;
+}
+.menuName{
+    display: inline;
+    transition: 2s;
+    
+}
