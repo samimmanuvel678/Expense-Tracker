@@ -4,20 +4,21 @@
 .sideBar{
     width: 55px;
     height: 100%;
-    background-color: #55E6C1;
+    background-color: #071952;
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center;
+    transition: all 1s ease;
     
 }
 .active{
     width: max-content;
     height: 100%;
-    background-color: #55E6C1;
+    background-color: #071952;
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 1s ease;
 }
 
 .menuSection{
@@ -29,19 +30,18 @@
     font-size: 16px;
     transition: background-color 1s;
     text-decoration: none;
+    color: #F7F7F8;
 }
 .menuSection:hover{
-    color: #F8EFBA;
-    background-color: #2C3A47;
+    color: #000000;
+    background-color: #8a8d86;
 }
-.icon{
-    font-size: 25px;
-}  
 .dashboard{
     padding: 15px 5px 15px 20px;
-    color: #F8EFBA;
-    background-color: #2C3A47;
 } 
+.icon{
+    font-size: 25px;  
+}  
 .closeIcon{
     float: right;
     padding-left: 10px;

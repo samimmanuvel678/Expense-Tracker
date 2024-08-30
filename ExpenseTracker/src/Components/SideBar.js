@@ -23,9 +23,12 @@ function SideBar() {
 
 
             {sideBarData.map((menu, index) => (
-                isOpen === false ? <div key={menu.id} className='menuSection'>
-                    <p className='icon'>{menu.icon}</p>
-                </div> :
+                isOpen === false ?
+                    <Link to={menu.path} key={menu.id}>
+                        <div className='menuSection'>
+                            <p className='icon'>{menu.icon}</p>
+                        </div>
+                    </Link> :
                     <Link to={menu.path} key={menu.id} className='menuSection'>
                         <p className='icon'>{menu.icon}</p>
                         <span className='menuName'>{menu.name}</span>

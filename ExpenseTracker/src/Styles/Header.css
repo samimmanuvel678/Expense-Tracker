@@ -1,0 +1,21 @@
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+.text{
+    font-family: "Oleo Script", system-ui;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+    color: #071952;
+    text-shadow: 3px 3px #989898, 6px 6px #6c6666;
+}
+.headerIcon{
+       font-size: 45px;
+}

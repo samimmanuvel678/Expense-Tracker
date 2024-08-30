@@ -1,8 +1,9 @@
 import React from 'react'
+import '../Styles/transaction.css'
 
 function Transaction() {
   return (
-    <div className='container'>
+    <div className='transaction'>
       <h1>This is Transaction page</h1>
     </div>
   )
