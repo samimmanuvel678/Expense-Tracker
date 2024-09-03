@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../Styles/sideBar.css'
-import { sideBarData } from './SideBarData';
+import { sideBarData } from '../Assets/SideBarData';
 import { RiCloseLargeLine } from "react-icons/ri";
 import { Link } from 'react-router-dom'
 import { TiThMenuOutline } from "react-icons/ti";
@@ -12,7 +12,7 @@ function SideBar() {
                 setIsOpen(!isOpen)
     }
     return (
-        <div className={isOpen === false ? "sideBar" : "active"}>
+        <div className={isOpen === false ? "sideBar inactive" : "sideBar active"}>
             {isOpen === false ? <div className='menuSection ' onClick={handleClick} >
                 <p className='icon'>{<TiThMenuOutline className='icon' />}</p>
             </div> : 

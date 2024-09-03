@@ -1,7 +1,101 @@
 .accountpage{
     margin: 0% 3.6% 0% 3.6%;
     padding: 1% 1% 1% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
-.accountpage>h1{
-    text-align: center;
+.containerBox{
+    width: 750px;
+    height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    background-color: #081E62;
+    border-radius: 10px;
+}
+.section1{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.createBtn{
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 800;
+    padding: 15px;
+    background-color: transparent;
+    color: white;
+}
+.createAccount{
+    width: 400px;
+    height: 280px;
+    background-color: transparent;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close{
+    display: none;
+}
+.open{
+    display: block;
+}
+.closeBtn{
+    float: right;
+    font-size: 30px;
+    color: rgb(177, 2, 2);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap:25px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form>input{
+    width: 350px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 15px;
+    font-size: 17px;
+}
+.form>button{
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 17px;
+}
+.list{
+    margin: auto;
+    width: 600px;
+    background-color: transparent;
+    padding: 15px;
+    color: white;
+   
+}
+.list>li>h3{
+    display: inline;
+    font-size: 25px;
+}
+.icon{
+    float: right;
+    width: 35px;
+    height: 35px;
 }

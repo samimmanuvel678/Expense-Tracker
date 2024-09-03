@@ -1,12 +1,13 @@
 import { GrTransaction } from "react-icons/gr";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { RiHome8Line } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
 
 export const sideBarData=[
   {
     id:"1",
     name:"Home",
-    icon:<RiHome8Line /> ,
+    icon:<RiHome8Line />,
     path:"/"
   },
   {
@@ -20,5 +21,5 @@ export const sideBarData=[
     name:"Transcations",
     icon:<GrTransaction />,
     path:"/transaction"
-  }
+  },
 ]
